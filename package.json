@@ -22,7 +22,7 @@
   "homepage": "https://github.com/johniak/react-web-gifted-chat#readme",
   "scripts": {
     "lint": "eslint . --ext .js,.jsx",
-    "compile": "export BABEL_ENV='production' && rm -rf ./dist && mkdir dist &&  rollup -c -i src/index.js -o dist/index.js"
+    "compile": "cross-env BABEL_ENV='production' && rm -rf ./dist && mkdir dist &&  rollup -c -i src/index.js -o dist/index.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
@@ -49,6 +49,7 @@
     "rollup-plugin-postcss": "^1.6.3"
   },
   "dependencies": {
+    "cross-env": "^7.0.2",
     "md5": "2.2.1",
     "moment": "2.22.2",
     "prop-types": "^15.6.2",
