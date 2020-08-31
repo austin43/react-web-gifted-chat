@@ -25,7 +25,7 @@
     "compile": "rm -rf ./dist && mkdir dist && cross-env BABEL_ENV=production rollup -c -i src/index.js -o dist/index.js",
     "postinstall": "npm run compile"
   },
-  "devDependencies": {
+  "dependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "7.1.0",
     "@babel/runtime": "7.1.5",
@@ -43,12 +43,6 @@
     "eslint-plugin-mocha": "^5.2.1",
     "eslint-plugin-react": "7.11.1",
     "eslint-plugin-react-native": "3.5.0",
-    "rollup-plugin-babel": "^4.0.3",
-    "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-node-resolve": "^3.4.0",
-    "rollup-plugin-postcss": "^1.6.3"
-  },
-  "dependencies": {
     "cross-env": "^7.0.2",
     "md5": "2.2.1",
     "moment": "2.22.2",
@@ -61,6 +55,10 @@
     "react-image-lightbox": "^5.1.0",
     "react-native-web": "0.9.9",
     "rollup": "^2.26.8",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-postcss": "^1.6.3",
     "shallowequal": "1.1.0",
     "uuid": "3.3.2"
   },
