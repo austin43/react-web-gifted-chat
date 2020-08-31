@@ -23,7 +23,7 @@
   "scripts": {
     "lint": "eslint . --ext .js,.jsx",
     "compile": "cross-env BABEL_ENV='production' && rm -rf ./dist && mkdir dist &&  rollup -c -i src/index.js -o dist/index.js",
-    "prepare": "npm run compile"
+    "postinstall": "npm run compile"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
